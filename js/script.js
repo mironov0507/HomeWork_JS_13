@@ -84,6 +84,10 @@ class Contacts{
                     element.info = changeData
 
                     inputChange.remove();
+
+                    this.storage = this.contactList
+                    
+                    this.onShow()
                 })
             }
         })
@@ -207,7 +211,6 @@ class ContactApp extends Contacts{
 
             superThis.onShow()
 
-            
         }();
        
     }
